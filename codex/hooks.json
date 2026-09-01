@@ -1,0 +1,47 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash '/Users/tokshichiko/.codex/hooks/herdr-agent-state.sh' session",
+            "timeout": 10
+          }
+        ]
+      },
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "gh-axi",
+            "timeout": 10
+          }
+        ]
+      },
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "chrome-devtools-axi",
+            "timeout": 10
+          }
+        ]
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/usr/bin/python3 /Users/tokshichiko/.codex/hooks/gbrain_prompt_capture.py",
+            "timeout": 5
+          }
+        ]
+      }
+    ]
+  }
+}

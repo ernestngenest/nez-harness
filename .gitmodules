@@ -1,0 +1,6 @@
+[submodule "claude-code/skills/avoid-ai-writing"]
+	path = claude-code/skills/avoid-ai-writing
+	url = https://github.com/conorbronsdon/avoid-ai-writing
+[submodule "codex/agent-skills/avoid-ai-writing"]
+	path = codex/agent-skills/avoid-ai-writing
+	url = https://github.com/conorbronsdon/avoid-ai-writing

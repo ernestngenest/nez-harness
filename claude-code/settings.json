@@ -1,0 +1,55 @@
+{
+  "agentPushNotifEnabled": true,
+  "enabledPlugins": {
+    "clangd-lsp@claude-plugins-official": true
+  },
+  "extraKnownMarketplaces": {
+    "ecc": {
+      "source": {
+        "source": "git",
+        "url": "https://github.com/affaan-m/ECC.git"
+      }
+    }
+  },
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "command": "bash '/Users/tokshichiko/.claude/hooks/herdr-agent-state.sh' session",
+            "timeout": 10,
+            "type": "command"
+          }
+        ],
+        "matcher": "*"
+      },
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "gh-axi",
+            "timeout": 10
+          }
+        ]
+      },
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "chrome-devtools-axi",
+            "timeout": 10
+          }
+        ]
+      }
+    ]
+  },
+  "remoteControlAtStartup": true,
+  "skipDangerousModePermissionPrompt": true,
+  "statusLine": {
+    "command": "node \"/Users/tokshichiko/.claude/plugins/marketplaces/ecc/scripts/hooks/ecc-statusline.js\"",
+    "type": "command"
+  },
+  "theme": "auto"
+}

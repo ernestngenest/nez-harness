@@ -1,0 +1,70 @@
+model = "gpt-5.6-sol"
+model_reasoning_effort = "medium"
+approvals_reviewer = "user"
+service_tier = "default"
+
+[tui]
+status_line = ["model-with-reasoning", "context-remaining", "current-dir", "git-branch", "five-hour-limit", "weekly-limit"]
+
+[features]
+hooks = true
+
+[projects."/Users/tokshichiko/Documents/butkem kodingup"]
+trust_level = "trusted"
+
+[projects."/Users/tokshichiko/Documents/metrics-frontend"]
+trust_level = "trusted"
+
+[projects."/Users/tokshichiko/Documents/kodingup/ku-0282"]
+trust_level = "trusted"
+
+[projects."/Users/tokshichiko/.codex/gbrain-sync"]
+trust_level = "trusted"
+
+[hooks.state]
+
+[hooks.state."/Users/tokshichiko/.codex/hooks.json:session_start:0:0"]
+trusted_hash = "sha256:b93173ebd82a6f09bed7b3a8d32b3d75d2445f504ff7ffd22031766e2e1d383a"
+
+[hooks.state."/Users/tokshichiko/.codex/hooks.json:session_start:1:0"]
+trusted_hash = "sha256:42ad5843ba79bdd68be42269ac7b513889a767e052dda6c6c28079a53af982ee"
+
+[hooks.state."/Users/tokshichiko/.codex/hooks.json:session_start:2:0"]
+trusted_hash = "sha256:2035963d8116b7f9c8418a165ee1d22cc62fa076e6536be410a8534452869541"
+
+[hooks.state."/Users/tokshichiko/.codex/hooks.json:user_prompt_submit:0:0"]
+trusted_hash = "sha256:79fedce7cd204d9d66fa5d6cb1b8fdbb2924c8122611ca44d19bc5d8ad082b98"
+
+[mcp_servers.context7]
+command = "npx"
+args = ["-y", "@upstash/context7-mcp"]
+
+[mcp_servers.context7.env]
+CONTEXT7_API_KEY = "REPLACE_ME"
+
+[mcp_servers.browseract]
+url = "https://mcp.browseract.com/101386126929409077/mcp/"
+
+[mcp_servers.browseract.http_headers]
+Authorization = "REPLACE_ME"
+
+[mcp_servers.gbrain]
+command = "ssh"
+args = [
+  "-o", "BatchMode=yes",
+  "-o", "IdentitiesOnly=yes",
+  "-o", "ConnectTimeout=10",
+  "-o", "ConnectionAttempts=3",
+  "-o", "ServerAliveInterval=30",
+  "-o", "ServerAliveCountMax=3",
+  "-i", "/Users/tokshichiko/.ssh/id_ed25519",
+  "root@43.133.142.103",
+  "/usr/local/bin/gbrain", "serve"
+]
+
+[mcp_servers.gbrain.tools.get_health]
+approval_mode = "approve"
+
+[mcp_servers.gbrain.tools.search]
+approval_mode = "approve"
+# END imported from ai-cli-config/claude-code

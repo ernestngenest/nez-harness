@@ -1,0 +1,18 @@
+# Imported equivalents of the Claude Code local Bash allowlist.
+prefix_rule(
+    pattern = ["softwareupdate"],
+    decision = "allow",
+    justification = "Imported from Claude Code settings.local.json",
+)
+
+prefix_rule(
+    pattern = ["brew"],
+    decision = "allow",
+    justification = "Imported from Claude Code settings.local.json",
+)
+
+prefix_rule(
+    pattern = ["/opt/homebrew/bin/brew"],
+    decision = "allow",
+    justification = "Imported from Claude Code settings.local.json",
+)
