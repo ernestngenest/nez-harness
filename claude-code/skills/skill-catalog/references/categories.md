@@ -20,7 +20,7 @@ Each skill has one primary category for navigation. A skill may still compose wi
 
 ## Testing & Review
 
-`before-and-after`, `evidence-driven-testing`, `fable-review`, `gpt-review`, `qa`, `review`, `risky-changes`, `run-deep-swe`, `tdd`, `total-review`
+`before-and-after`, `evidence-driven-testing`, `fable-review`, `gpt-review`, `gpt-review-lite`, `qa`, `review`, `risky-changes`, `run-deep-swe`, `sonnet-review`, `tdd`, `total-review`, `total-review-lite`
 
 ## Git & Delivery
 
