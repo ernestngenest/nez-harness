@@ -1,6 +1,6 @@
 ---
-name: ras-mic-workflow
-description: End-to-end feature-delivery flow from Micky/@Rasmic's "Software Factory" — isolated worktree, then code-structure discipline, then evidence-driven testing, before/after screenshots, and iterating with Greptile until the PR is clean. Use when the user says "ras mic workflow", "rasmic workflow", "software factory flow", or wants to ship a feature start-to-finish using new-feature + code-structure + evidence-driven-testing + before-and-after + greploop/greploop-apps together instead of one at a time.
+name: nez-solo-workflow
+description: End-to-end feature-delivery flow from Micky/@Rasmic's "Software Factory" — isolated worktree, then code-structure discipline, then evidence-driven testing, before/after screenshots, and iterating with Greptile until the PR is clean. Use when the user says "nez solo workflow", "software factory flow", or wants to ship a feature start-to-finish using new-feature + code-structure + evidence-driven-testing + before-and-after + greploop/greploop-apps together instead of one at a time.
 ---
 
 # Ras Mic Workflow
