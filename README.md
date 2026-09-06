@@ -14,13 +14,13 @@ Each directory has its own `README.md` with the exact file-by-file breakdown and
 
 ## Skills
 
-Every skill folder present under `claude-code/skills/`, `codex/agent-skills/`, and `opencode/skills/` — 127 skills total. Descriptions are copied verbatim from each skill's `SKILL.md` frontmatter. `claude-code/skills/learned/` is an empty placeholder folder (no `SKILL.md`) and is not listed.
+Every skill folder present under `claude-code/skills/`, `codex/agent-skills/`, and `opencode/skills/` — 128 skills total. Descriptions are copied verbatim from each skill's `SKILL.md` frontmatter. `claude-code/skills/learned/` is an empty placeholder folder (no `SKILL.md`) and is not listed.
 
 - **Scope: All three** — present in `claude-code/skills/`, `codex/agent-skills/`, and `opencode/skills/`.
 - **Scope: Codex only** — present only in `codex/agent-skills/` (12 skills: decision-mapping, design-an-interface, edit-article, find-skills, obsidian-vault, qa, request-refactor-plan, review, ubiquitous-language, writing-beats, writing-fragments, writing-shape).
 - **Source: New (2026-09-06 import)** — 67 skills bulk-imported from two public repos and mirrored into all three profiles plus `~/.agents/skills` (for `bb`): [davidondrej/skills](https://github.com/davidondrej/skills) (60 skills; 2 of its 62, `handoff` and `teach`, were skipped as names already existed here) and [michaelshimeles/skills](https://github.com/michaelshimeles/skills) (7 skills).
 - **Source: New (2026-09-06 UI import)** — 22 skills mirrored into all three profiles plus `~/.agents/skills` (for `bb`): [emilkowalski/skills](https://github.com/emilkowalski/skills) (11 skills; `prototype` was skipped because that name already existed here) and [jakubkrehel/skills](https://github.com/jakubkrehel/skills) (11 skills).
-- **Source: Nez Harness** — `skill-catalog` provides an on-demand category index shared by all three profiles and bb.
+- **Source: Nez Harness** — skills authored for this repo rather than imported: `skill-catalog` (on-demand category index) and `ras-mic-workflow` (chains new-feature + code-structure + evidence-driven-testing + before-and-after + greploop/greploop-apps into one flow, after Micky/@Rasmic's "Software Factory" post).
 - **Source: Existing** — already in this repo before that import.
 
 | Skill | Scope | Source | Description |
@@ -113,6 +113,7 @@ Every skill folder present under `claude-code/skills/`, `codex/agent-skills/`, a
 | `prototype` | All three | Existing | Build a throwaway prototype to flesh out a design — a runnable terminal app for state/business-logic questions, or several radically different UI variations toggleable from one route. |
 | `push-skill-to-github` | All three | New (2026-09-06 import) | Commit and push agent-skill changes to the user's private skills GitHub repo (`<private-skills-repo>`, rooted at `<skills-repo-root>`). Use after creating or updating any skill, when the user says "push the skill", "push skills to github", "save the skill to my repo", or "update the skills repo". Handles staging, committing, and pushing directly in the current shell — works in any agent, no cmux needed. |
 | `qa` | Codex only | Existing | Interactive QA session where user reports bugs or issues conversationally, and the agent files GitHub issues. Explores the codebase in the background for context and domain language. Use when user wants to report bugs, do QA, file issues conversationally, or mentions "QA session". |
+| `ras-mic-workflow` | All three | Nez Harness | End-to-end feature-delivery flow from Micky/@Rasmic's "Software Factory" post — new-feature (isolated worktree) → code-structure (avoid duplicated logic) → evidence-driven-testing (recorded proof) → before-and-after (UI screenshots) → greploop/greploop-apps (iterate until Greptile is clean). Use when the user says "ras mic workflow", "rasmic workflow", "software factory flow", or wants to ship a feature start-to-finish instead of invoking those five skills one at a time. |
 | `read-all-adrs` | All three | New (2026-09-06 import) | Read every ADR markdown file in the project's docs/adr/ folder so you have full context on past decisions. Use only when the user explicitly calls it. |
 | `remind` | All three | New (2026-09-06 import) | Rewrite the last response simpler and shorter in plain English, prefixed with a 3-5 sentence TLDR of the conversation so far. Manual-only, invoked as /remind. |
 | `rename` | All three | New (2026-09-06 import) | Manually-invoked skill that renames the current thread or session to 2-5 lowercase descriptive words. Use when the user says "rename", "rename this", "rename thread", or "rename session". |
@@ -159,7 +160,7 @@ The complete one-category-per-skill index lives in [`skill-catalog/references/ca
 
 | Category | Skills |
 |---|---:|
-| Agent & Skill Operations | 18 |
+| Agent & Skill Operations | 19 |
 | Planning & Product | 14 |
 | Architecture & Domain | 7 |
 | Implementation & Debugging | 5 |
@@ -172,7 +173,7 @@ The complete one-category-per-skill index lives in [`skill-catalog/references/ca
 | Data & Security | 5 |
 | System & Environment | 10 |
 | Learning & Ideation | 4 |
-| **Total** | **127** |
+| **Total** | **128** |
 
 ## Install
 

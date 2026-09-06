@@ -4,7 +4,7 @@ Each skill has one primary category for navigation. A skill may still compose wi
 
 ## Agent & Skill Operations
 
-`agent-self-scheduling`, `ask-matt`, `bb-plugins`, `codex-subagent`, `distribute-skill-to-all-agents`, `effective-agent-skills`, `find-skills`, `goal-loop`, `handoff`, `herdr`, `launch-subagent`, `nagent`, `new-grok-bot`, `pi-custom-model`, `push-skill-to-github`, `rename`, `reset-cursor-acp`, `skill-catalog`
+`agent-self-scheduling`, `ask-matt`, `bb-plugins`, `codex-subagent`, `distribute-skill-to-all-agents`, `effective-agent-skills`, `find-skills`, `goal-loop`, `handoff`, `herdr`, `launch-subagent`, `nagent`, `new-grok-bot`, `pi-custom-model`, `push-skill-to-github`, `ras-mic-workflow`, `rename`, `reset-cursor-acp`, `skill-catalog`
 
 ## Planning & Product
 
