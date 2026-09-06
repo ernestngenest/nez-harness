@@ -14,12 +14,13 @@ Each directory has its own `README.md` with the exact file-by-file breakdown and
 
 ## Skills
 
-Every skill folder present under `claude-code/skills/`, `codex/agent-skills/`, and `opencode/skills/` — 126 skills total. Descriptions are copied verbatim from each skill's `SKILL.md` frontmatter. `claude-code/skills/learned/` is an empty placeholder folder (no `SKILL.md`) and is not listed.
+Every skill folder present under `claude-code/skills/`, `codex/agent-skills/`, and `opencode/skills/` — 127 skills total. Descriptions are copied verbatim from each skill's `SKILL.md` frontmatter. `claude-code/skills/learned/` is an empty placeholder folder (no `SKILL.md`) and is not listed.
 
 - **Scope: All three** — present in `claude-code/skills/`, `codex/agent-skills/`, and `opencode/skills/`.
 - **Scope: Codex only** — present only in `codex/agent-skills/` (12 skills: decision-mapping, design-an-interface, edit-article, find-skills, obsidian-vault, qa, request-refactor-plan, review, ubiquitous-language, writing-beats, writing-fragments, writing-shape).
 - **Source: New (2026-09-06 import)** — 67 skills bulk-imported from two public repos and mirrored into all three profiles plus `~/.agents/skills` (for `bb`): [davidondrej/skills](https://github.com/davidondrej/skills) (60 skills; 2 of its 62, `handoff` and `teach`, were skipped as names already existed here) and [michaelshimeles/skills](https://github.com/michaelshimeles/skills) (7 skills).
 - **Source: New (2026-09-06 UI import)** — 22 skills mirrored into all three profiles plus `~/.agents/skills` (for `bb`): [emilkowalski/skills](https://github.com/emilkowalski/skills) (11 skills; `prototype` was skipped because that name already existed here) and [jakubkrehel/skills](https://github.com/jakubkrehel/skills) (11 skills).
+- **Source: Nez Harness** — `skill-catalog` provides an on-demand category index shared by all three profiles and bb.
 - **Source: Existing** — already in this repo before that import.
 
 | Skill | Scope | Source | Description |
@@ -132,6 +133,7 @@ Every skill folder present under `claude-code/skills/`, `codex/agent-skills/`, a
 | `setup-pre-commit` | All three | Existing | Set up Husky pre-commit hooks with lint-staged (Prettier), type checking, and tests in the current repo. Use when user wants to add pre-commit hooks, set up Husky, configure lint-staged, or add commit-time formatting/typechecking/testing. |
 | `short` | All three | New (2026-09-06 import) | Manually-invoked skill that forces the agent to compress its current answer — strip filler, simplify wording, and cut length while keeping the substance. Use when the user says "short", "shorter", "simpler", "too long", "tl;dr", or wants a more concise version of the previous response. |
 | `signal-from-expert` | All three | New (2026-09-06 import) | Review a corpus of the user's raw, unfiltered thinking (daily files, journaling, dictation) against a world-class expert's body of work on that topic, and surface the few passages that hit his exact situation plus at least one gap where he is wrong or missing something. Manual-only. Use when the user runs /signal-from-expert with a corpus, an expert and a topic. Differentiator: pairs his own words with the expert's exact words and file:line pointers; not a summary of the essays, not generic research. |
+| `skill-catalog` | All three | Nez Harness | Browse the installed skill library by category and recommend the right skill. Use when the user asks what skills exist, wants skills grouped, or needs help choosing a skill. |
 | `stop-overthinking` | All three | New (2026-09-06 import) | Manually-invoked skill that stops overthinking and forces a short, practical decision. Use only when the user explicitly invokes stop-overthinking. |
 | `tdd` | All three | Existing | Test-driven development. Use when the user wants to build features or fix bugs test-first, mentions "red-green-refactor", or wants integration tests. |
 | `teach` | All three | Existing | Teach the user a new skill or concept, within this workspace. |
@@ -150,6 +152,27 @@ Every skill folder present under `claude-code/skills/`, `codex/agent-skills/`, a
 | `writing-great-skills` | All three | Existing | Reference for writing and editing skills well — the vocabulary and principles that make a skill predictable. |
 | `writing-shape` | Codex only | Existing | Take a markdown file of raw material and shape it into an article through a conversational session — drafting candidate openings, growing the piece paragraph by paragraph, arguing about format (lists, tables, callouts, quotes) at each step. Use when the user has a pile of notes, fragments, or a rough draft and wants help turning it into something publishable. |
 | `youtube-transcript` | All three | New (2026-09-06 import) | Use whenever the user needs the transcript of a YouTube video — fetching, extracting, downloading, or pulling captions/subtitles/transcript text from a YouTube URL. Triggers on "get the transcript", "transcript of this video", "pull the captions", "download subtitles", "what does this YouTube video say". Primary path is DeepAPI (go to deepapi.co to get an API key); yt-dlp is the local fallback. |
+
+### Skill categories
+
+The complete one-category-per-skill index lives in [`skill-catalog/references/categories.md`](claude-code/skills/skill-catalog/references/categories.md). Invoke `skill-catalog` in any profile when you want an agent to choose skills by category.
+
+| Category | Skills |
+|---|---:|
+| Agent & Skill Operations | 18 |
+| Planning & Product | 14 |
+| Architecture & Domain | 7 |
+| Implementation & Debugging | 5 |
+| Testing & Review | 10 |
+| Git & Delivery | 8 |
+| UI & Design | 15 |
+| Animation & Motion | 6 |
+| Writing & Documentation | 14 |
+| Research & Web | 11 |
+| Data & Security | 5 |
+| System & Environment | 10 |
+| Learning & Ideation | 4 |
+| **Total** | **127** |
 
 ## Install
 
