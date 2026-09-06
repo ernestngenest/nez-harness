@@ -177,7 +177,7 @@ The complete one-category-per-skill index lives in [`skill-catalog/references/ca
 | Data & Security | 5 |
 | System & Environment | 10 |
 | Learning & Ideation | 4 |
-| **Total** | **128** |
+| **Total** | **131** |
 
 ## Install
 
