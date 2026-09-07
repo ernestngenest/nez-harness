@@ -10,6 +10,10 @@ Each skill has one primary category for navigation. A skill may still compose wi
 
 `ask-then-build`, `before-building`, `decision-mapping`, `decisions`, `grill-me`, `grill-with-docs`, `grilling`, `next-decision`, `prompt-me`, `request-refactor-plan`, `stop-overthinking`, `to-issues`, `to-prd`, `triage`
 
+## Business & Entrepreneurship
+
+`company-values`, `find-community`, `first-customers`, `grow-sustainably`, `marketing-plan`, `minimalist-review`, `mvp`, `pricing`, `processize`, `validate-idea`
+
 ## Architecture & Domain
 
 `code-structure`, `codebase-design`, `design-an-interface`, `domain-modeling`, `improve-codebase-architecture`, `read-all-adrs`, `ubiquitous-language`
