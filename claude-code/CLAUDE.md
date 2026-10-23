@@ -22,17 +22,6 @@ These rules **do NOT apply to:**
 
 ---
 
-## Karpathy Guidelines
-
-Source: [andrej-karpathy-skills](https://github.com/multica-ai/andrej-karpathy-skills), derived from [Andrej Karpathy's observations](https://x.com/karpathy/status/2015883857489522876) on LLM coding pitfalls.
-
-1. **Think before coding** — state assumptions, surface tradeoffs, ask instead of guessing when unclear.
-2. **Simplicity first** — minimum code for the ask; no speculative features, abstractions, or error handling for impossible cases.
-3. **Surgical changes** — touch only what the task requires; don't refactor or clean up unrelated code.
-4. **Goal-driven execution** — define a verify step per task (e.g. a failing test) and loop until it passes.
-
----
-
 ## Universal Rules (all stacks)
 
 ### Single Responsibility Principle (SRP)
